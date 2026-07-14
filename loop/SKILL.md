@@ -6,7 +6,7 @@ description: Orchestrate subagents to implement a requested code change, refacto
 # Loop
 
 1. Keep the main conversation orchestrator-only: do not perform implementation, refactoring, review, or fix work itself. It may define subagent task boundaries, coordinate and integrate their work, validate results, commit, push, and open the PR.
-2. Create every subagent with no inherited user or assistant messages from the main conversation. At creation, load the applicable project `AGENTS.md` instructions into the subagent's initial context through the same instruction-loading mechanism used for the main agent, independently of conversation history.
+2. Create every subagent with no inherited user or assistant messages from the main conversation. At creation, ensure the applicable project `AGENTS.md` instructions are present in the subagent's initial context through the same instruction-loading mechanism used for the main agent, independently of conversation history.
 3. At the start, ensure `MEMORY.md` exists at the project root and read it before orchestrating. Keep it limited to information that subagents must know, update it only when such information exists, and require every subagent to read it before working.
 4. Delegate the scoped implementation and refactoring to an initial implementation subagent: implement only the request, then refactor only changed code without altering behavior.
 5. Run the full available test suite.
