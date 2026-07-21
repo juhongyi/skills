@@ -11,5 +11,5 @@ description: Refactor existing code according to explicit user requirements whil
 4. Refactor only the requested scope. Make the smallest clear change that satisfies the request, and avoid unrelated cleanup or broad rewrites.
 5. Preserve existing behavior unless the user explicitly requests a behavior change.
 6. Treat only explicit user requirements, never the current diff itself, as candidates for durable project guidance.
-7. Update only an existing applicable `AGENTS.md`, and only when a requirement is clearly important, durable, reusable, and expressible generally. Write any update as general guidance, and avoid case-specific micromanagement. Skip temporary or narrow requirements. Do not create an `AGENTS.md` when none exists. Ask the user when a requirement's importance or generality is ambiguous.
+7. Update only an existing `AGENTS.md` at the target project root, and only when a requirement is clearly important, durable, reusable, and expressible generally. Write any update as general guidance, and avoid case-specific micromanagement. Skip temporary or narrow requirements. Do not create an `AGENTS.md` when none exists. Ask the user when a requirement's importance or generality is ambiguous.
 8. Run relevant tests and checks, then inspect every resulting change, including new or untracked files, for unintended behavior or out-of-scope changes.
