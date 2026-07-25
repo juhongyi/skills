@@ -1,6 +1,6 @@
 ---
 name: create-issue
-description: Plan and create GitHub issues as independent top-level issues with optional sub-issues and issue dependencies. Use when Codex needs to decompose work, confirm the proposed issue structure, and create it with GitHub CLI.
+description: Plan and create GitHub issues as independent top-level issues with optional sub-issues and issue dependencies. Use when an agent needs to decompose work, confirm the proposed issue structure, and create it with GitHub CLI.
 ---
 
 # Create Issue
