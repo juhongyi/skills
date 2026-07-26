@@ -1,6 +1,6 @@
 ---
 name: loop
-description: Orchestrate subagents to implement a requested code change, refactor and verify it, independently review and fix it until no actionable findings remain, then open a ready-for-review pull request. Use when Codex should own a coding task through reviewed PR creation.
+description: Orchestrate subagents to implement a requested code change, refactor and verify it, independently review and fix it until no actionable findings remain, then open a ready-for-review pull request. Use when an agent should own a coding task through reviewed PR creation.
 ---
 
 # Loop

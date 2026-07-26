@@ -1,6 +1,6 @@
 ---
 name: setup
-description: Initialize a Python project with uv using the latest Python 3.13 version supported by uv, add the latest stable pytest and Ruff as development dependencies, ask whether other latest stable libraries are needed, and copy juhongyi/skills agents-md/dev.md to the project-root AGENTS.md. Use when Codex needs to bootstrap or set up a Python project with this standard configuration.
+description: Initialize a Python project with uv using the latest Python 3.13 version supported by uv, add the latest stable pytest and Ruff as development dependencies, ask whether other latest stable libraries are needed, and copy juhongyi/skills agents-md/dev.md to the project-root AGENTS.md. Use when an agent needs to bootstrap or set up a Python project with this standard configuration.
 ---
 
 # Setup
