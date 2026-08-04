@@ -18,4 +18,4 @@ description: Initialize a Python project with uv and standard development toolin
    - `ADR.md`: key architectural decisions, alternatives, rationale, and consequences.
    - `DESIGN.md`: implementation flows, module responsibilities, interfaces, data models, and error handling.
 9. Verify the initialized project, run the relevant checks, and confirm with `wc -l` that every generated document is at or below 300 lines.
-10. After the setup and documentation are complete, review the changes, commit only the setup files on a new branch, push the branch, and create a ready-for-review pull request with `gh pr create`. Include the change summary and verification results in the pull request body.
+10. After the setup and documentation are complete, review the changes, commit only the setup files and generated documentation under `docs/` on a new branch, push the branch, and create a ready-for-review pull request with `gh pr create`. Include the change summary and verification results in the pull request body.
