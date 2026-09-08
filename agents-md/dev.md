@@ -7,4 +7,4 @@ Atomic commits: coherent, independently reviewable.
 Before: `git fetch origin`; ask user to choose a base branch; work only in new Git worktree.\
 `git worktree add -b <new-branch> "$HOME/.local/share/opencode/worktree/<project-id>/<hash>" <base-branch>`; `<project-id>` current project dir; `<hash>` random 6-digit hex.
 
-English PR titles; Korean PR bodies concise, clear, with sufficient context for reviewers.
+English PR titles; concise, clear Korean PR bodies that respect reviewers' time by providing sufficient context.
