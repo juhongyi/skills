@@ -1,6 +1,6 @@
 Keep package/module code, names, responsibilities self-explanatory; modules focused; boundaries/dependencies explicit.\
 Use established principles and paradigms: object-oriented/modular design, SRP, high cohesion, low coupling.\
-Use TDD for behavior changes with meaningful tests; cover expected/failure/boundary/edge cases, not artificial tests.
+Use TDD for behavior changes with meaningful tests; cover expected/failure/boundary/edge cases, not artificial tests.\
 Run focused/full tests; fix change-caused failures; report unrelated/pre-existing ones.\
 Atomic commits: coherent, independently reviewable.
 
