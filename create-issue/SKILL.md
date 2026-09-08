@@ -1,6 +1,6 @@
 ---
 name: create-issue
-description: Plan and create GitHub issues as independent top-level issues with optional sub-issues and issue dependencies. Use when an agent needs to decompose work, confirm the proposed issue structure, and create it with GitHub CLI.
+description: Plan and create GitHub issues as independent top-level issues with optional sub-issues and issue dependencies. Use when an agent needs to decompose work, confirm the proposed issue structure only when it materially differs from a Plan Mode plan, and create it with GitHub CLI.
 ---
 
 # Create Issue
@@ -11,5 +11,5 @@ description: Plan and create GitHub issues as independent top-level issues with 
 4. Add issue dependencies only between top-level issues or between sibling sub-issues of the same parent. Express direction with GitHub's `blocked by` and `blocking` relationships.
 5. Treat epic as a planning concept only. Create ordinary issues without assigning an Epic issue type.
 6. Use plain descriptive titles without category prefixes such as `[Epic]` or `[Sub-issue]`.
-7. In Build Mode, present a concise issue outline covering scope, hierarchy, and dependencies, and obtain approval before creation. If the structure changes after approval, present the concise outline again. In Plan Mode, do not finalize issue plans; direct the user to continue in Build Mode.
-8. After Build Mode approval, finalize titles and bodies, then create the issues with `gh issue create`, using `--parent`, `--blocked-by`, and `--blocking` or their `gh issue edit` equivalents. Verify the resulting hierarchy and dependencies with `gh issue view`.
+7. In Plan Mode, provide a concise issue plan covering scope, hierarchy, dependencies, and a non-final acceptance-criteria outline for each issue. Do not finalize detailed titles or bodies.
+8. In Build Mode, finalize titles, bodies, and acceptance criteria, then create the issues with `gh issue create`, using `--parent`, `--blocked-by`, and `--blocking` or their `gh issue edit` equivalents. Obtain confirmation before creation only when this plan materially differs from the Plan Mode plan in issue count, scope, hierarchy, dependencies, acceptance criteria, or intended outcome; minor title or prose changes are not material. Verify the resulting hierarchy and dependencies with `gh issue view`.
