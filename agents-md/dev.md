@@ -1,13 +1,10 @@
-Make package and module structures, names, responsibilities, and code clear to newcomers.\
-Keep modules small and focused, with clear boundaries and dependencies.\
-Apply object-oriented and modular design, following the single-responsibility principle while maintaining high cohesion and low coupling.\
-Use TDD and test expected behavior, failure paths, boundary conditions, and edge cases.\
-Fix every failure and ensure the full test suite passes.\
-Split changes into multiple atomic commits, each containing the smallest practical change.
+Keep package/module code, names, responsibilities clear to newcomers; modules focused; boundaries/dependencies explicit.\
+Unless another paradigm is more appropriate, default OO/modular: SRP, high cohesion, low coupling.\
+Use TDD for behavior changes with meaningful tests; cover expected/failure/boundary/edge cases, not artificial tests.\
+Run focused/full tests; fix change-caused failures; report unrelated/pre-existing ones.\
+Atomic commits: coherent, independently reviewable.
 
-Before making any file changes, create a new Git worktree for the task and perform all work from that worktree.\
-Run `git fetch origin` to synchronize the remote repository before creating the worktree.\
-Before creating the worktree, ask the user whether to use `dev`, `main`, or another branch as the base, with `dev` as the highest-priority option.\
-Create the worktree with `git worktree add -b <new-branch> "$HOME/.local/share/opencode/worktree/<project-id>/<hash>" <base-branch>`, where `<project-id>` matches the name of the current project working directory and `<hash>` is a random six-digit hexadecimal value.
+Before: `git fetch origin`; ask user for `dev` (preferred), `main`, or other base; work only in new Git worktree.\
+`git worktree add -b <new-branch> "$HOME/.local/share/opencode/worktree/<project-id>/<hash>" <base-branch>`; `<project-id>` current project dir; `<hash>` random 6-digit hex.
 
-Write PR titles in English, PR bodies in Korean, and include the key details reviewers need to understand the changes without inspecting the changed files.
+English PR titles; Korean self-contained PR bodies.
