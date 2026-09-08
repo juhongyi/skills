@@ -11,5 +11,5 @@ description: Plan and create GitHub issues as independent top-level issues with 
 4. Add issue dependencies only between top-level issues or between sibling sub-issues of the same parent. Express direction with GitHub's `blocked by` and `blocking` relationships.
 5. Treat epic as a planning concept only. Create ordinary issues without assigning an Epic issue type.
 6. Use plain descriptive titles without category prefixes such as `[Epic]` or `[Sub-issue]`.
-7. Present the complete titles, bodies, hierarchy, and dependencies before creation. In Plan Mode, use the plan approval flow; otherwise, obtain explicit confirmation.
-8. After approval, create the issues with `gh issue create`, using `--parent`, `--blocked-by`, and `--blocking` or their `gh issue edit` equivalents. Verify the resulting hierarchy and dependencies with `gh issue view`.
+7. In Build Mode, present a concise issue outline covering scope, hierarchy, and dependencies, and obtain approval before creation. If the structure changes after approval, present the concise outline again. In Plan Mode, do not finalize issue plans; direct the user to continue in Build Mode.
+8. After Build Mode approval, finalize titles and bodies, then create the issues with `gh issue create`, using `--parent`, `--blocked-by`, and `--blocking` or their `gh issue edit` equivalents. Verify the resulting hierarchy and dependencies with `gh issue view`.
