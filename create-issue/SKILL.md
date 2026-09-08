@@ -5,11 +5,11 @@ description: Plan and create GitHub issues as independent top-level issues with 
 
 # Create Issue
 
-1. Split the work into independent, parallelizable top-level issues. Treat an issue with sub-issues as a parent issue; never create an umbrella parent issue solely to contain the entire request.
-2. Break broad parent issues into small, verifiable sub-issues. Keep each issue scoped and give it concise acceptance criteria.
-3. Plan each pull request that resolves one issue around 300 changed lines, counting additions plus deletions in code and tests. Exclude lock files and other generated files from the estimate.
-4. Add issue dependencies only between top-level issues or between sibling sub-issues of the same parent. Express direction with GitHub's `blocked by` and `blocking` relationships.
-5. Treat epic as a planning concept only. Create ordinary issues without assigning an Epic issue type.
-6. Use plain descriptive titles without category prefixes such as `[Epic]` or `[Sub-issue]`.
-7. Present the complete titles, bodies, hierarchy, and dependencies before creation. In Plan Mode, use the plan approval flow; otherwise, obtain explicit confirmation.
-8. After approval, create the issues with `gh issue create`, using `--parent`, `--blocked-by`, and `--blocking` or their `gh issue edit` equivalents. Verify the resulting hierarchy and dependencies with `gh issue view`.
+1. Split work into independently scoped top-level issues; parallelize only where dependencies permit. An issue with sub-issues is a parent, never an umbrella solely for the request.
+2. Break broad parents into small, verifiable sub-issues with concise acceptance criteria.
+3. Plan each issue's resolving PR for about 300 changed code-and-test lines, additions plus deletions; exclude lock and generated files.
+4. Add dependencies only between top-level issues or sibling sub-issues of one parent, using GitHub's `blocked by` and `blocking` relationships.
+5. Treat Epic only as a planning concept; create ordinary issues without an Epic type.
+6. Use plain descriptive titles without prefixes such as `[Epic]` or `[Sub-issue]`.
+7. Before creation, present complete titles, bodies, hierarchy, and dependencies. In Plan Mode, use the plan approval flow; otherwise obtain explicit confirmation.
+8. After approval, create issues with `gh issue create`, using `--parent`, `--blocked-by`, and `--blocking` or equivalent `gh issue edit` options. Verify hierarchy and dependencies with `gh issue view`.
